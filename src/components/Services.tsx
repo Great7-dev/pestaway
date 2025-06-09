@@ -1,7 +1,11 @@
 import React from "react";
 import { Home, Building2, Sprout, Bug, Shield, Zap } from "lucide-react";
 
-const Services: React.FC = () => {
+type ServicesProps = {
+  scrollToContact: () => void;
+};
+
+const Services: React.FC<ServicesProps> = ({ scrollToContact }) => {
   const services = [
     {
       icon: Home,
@@ -125,7 +129,10 @@ const Services: React.FC = () => {
               Contact us for a personalized pest control plan tailored to your
               specific needs.
             </p>
-            <button className="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-colors">
+            <button
+              onClick={scrollToContact}
+              className="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-colors"
+            >
               Book an Appointment
             </button>
           </div>
