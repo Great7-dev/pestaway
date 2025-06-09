@@ -105,14 +105,14 @@ const Services: React.FC = () => {
                 ))}
               </ul>
 
-              <div className="flex items-center justify-between">
-                {/* <span className="text-2xl font-bold text-blue-600">
+              {/* <div className="flex items-center justify-between">
+                <span className="text-2xl font-bold text-blue-600">
                   {service.price}
-                </span> */}
+                </span>
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
                   Get Quote
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -126,7 +126,7 @@ const Services: React.FC = () => {
               specific needs.
             </p>
             <button className="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-colors">
-              Schedule Consultation
+              Book an Appointment
             </button>
           </div>
         </div>
