@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Bug,
-  Phone,
-  Mail,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Bug, Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 const Footer: React.FC = () => {
   const quickLinks = ["Home", "About Us", "Services", "Contact", "FAQ", "Blog"];
@@ -24,9 +16,8 @@ const Footer: React.FC = () => {
 
   const socialLinks = [
     { icon: Facebook, href: "#" },
-    { icon: Twitter, href: "#" },
     { icon: Instagram, href: "#" },
-    { icon: Linkedin, href: "#" },
+    { icon: SiTiktok, href: "https://www.tiktok.com/@pestaway_fumigation" },
   ];
 
   return (
